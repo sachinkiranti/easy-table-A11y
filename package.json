@@ -1,0 +1,49 @@
+{
+    "name": "@sachinkiranti/easy-table-A11y",
+    "version": "1.0.0",
+    "description": "Easy Responsive HTML Table",
+    "main": "dist/easy-table.min.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sachinkiranti/easy-table-A11y.git"
+    },
+    "scripts": {
+        "clean": "rimraf build && rimraf coverage",
+        "build": "npm run compile && npm run copy:html && npm run bundle && npm run minify",
+        "compile": "tsc",
+        "copy:html": "cpx src/**.html dist && cpx build/easy-table.** dist",
+        "test": "karma start",
+        "bundle": "rollup -c",
+        "minify": "uglifyjs build/easy-table.js --output dist/easy-table.min.js"
+    },
+    "keywords": [],
+    "author": "Sachin Kiranti <sachinkiranti@gmail.com> (https://raisachin.com.np/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sachinkiranti/easy-table-A11y/issues"
+    },
+    "dependencies": {
+        "jquery": "^3.7.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.10",
+        "@babel/plugin-external-helpers": "^7.16.7",
+        "@babel/plugin-transform-runtime": "^7.17.10",
+        "@babel/preset-env": "^7.17.10",
+        "@types/jasmine": "^4.0.3",
+        "@types/jquery": "^3.5.16",
+        "cpx": "^1.5.0",
+        "jasmine-core": "^4.1.0",
+        "karma": "^6.3.19",
+        "karma-chrome-launcher": "^3.1.1",
+        "karma-jasmine": "^5.0.0",
+        "karma-typescript": "^5.5.3",
+        "puppeteer": "^13.7.0",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.71.1",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-sourcemaps": "^0.6.3",
+        "typescript": "^4.9.5",
+        "uglify-js": "^3.15.4"
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Table A11Y Demo</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Easy Table A11Y Demo</h1>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>USA</td>
+        <td>30</td>
+        <td>Engineer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Canada</td>
+        <td>28</td>
+        <td>Teacher</td>
+      </tr>
+      <tr>
+        <td>Mark Johnson</td>
+        <td>UK</td>
+        <td>35</td>
+        <td>Doctor</td>
+      </tr>
+      <tr>
+        <td>Lisa Brown</td>
+        <td>Australia</td>
+        <td>32</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+
+    <!-- Load jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./easy-table.min.js"></script>
+
+    <script>
+        $(function () {
+            $('table').easyTableA11y()
+        });
+    </script>
+</body>
+</html>
