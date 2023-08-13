@@ -1,4 +1,4 @@
-# Textual
+# EasyTable
 
 A Simple Responsive Table js library.
 
