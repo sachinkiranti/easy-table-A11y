@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Table A11Y Demo</title>
+# Textual
 
-    <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-    </style>
-</head>
-<body>
-    <h1>Easy Table A11Y Demo</h1>
+A Simple Responsive Table js library.
 
+## Install
+
+### Download
+
+- [easy-table.min.js](https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js)
+
+### CDN
+
+Link directly to EasyTable files on [unpkg](https://unpkg.com).
+
+
+``` html
+<script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js"></script>
+```
+
+## Usage
+
+```html
     <table>
       <thead>
         <tr>
@@ -64,14 +57,28 @@
       </tbody>
     </table>
 
-    <!-- Load jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./easy-table.min.js"></script>
+    <script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js"></script>
 
     <script>
         $(function () {
             $('table').easyTableA11y()
         });
     </script>
-</body>
-</html>
+```
+
+## Development
+
+This package is developed with Node.js v16.13.2 and npm v8.1.2
+
+Install dependencies
+
+``` sh
+npm install
+```
+
+Run tests
+
+``` sh
+npm run test
+```
