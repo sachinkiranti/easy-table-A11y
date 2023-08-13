@@ -67,6 +67,13 @@ Link directly to EasyTable files on [unpkg](https://unpkg.com).
     </script>
 ```
 
+## Demo
+
+You can see the demo page created in dist/demo.html.
+
+![Demo Image](demo.gif)
+
+
 ## Development
 
 This package is developed with Node.js v16.13.2 and npm v8.1.2
