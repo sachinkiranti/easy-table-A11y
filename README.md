@@ -89,3 +89,7 @@ Run tests
 ``` sh
 npm run test
 ```
+
+## TODO
+- [ ] Write tests
+- [ ] More flexible configurations
