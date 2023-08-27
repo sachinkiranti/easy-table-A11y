@@ -27,41 +27,72 @@
 <body>
     <h1>Easy Table A11Y Demo</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Country</th>
-          <th>Age</th>
-          <th>Profession</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John Doe</td>
-          <td>USA</td>
-          <td>30</td>
-          <td>Engineer</td>
-        </tr>
-        <tr>
-          <td>Jane Smith</td>
-          <td>Canada</td>
-          <td>28</td>
-          <td>Teacher</td>
-        </tr>
-        <tr>
-          <td>Mark Johnson</td>
-          <td>UK</td>
-          <td>35</td>
-          <td>Doctor</td>
-        </tr>
-        <tr>
-          <td>Lisa Brown</td>
-          <td>Australia</td>
-          <td>32</td>
-          <td>Designer</td>
-        </tr>
-      </tbody>
+    <table class="sachin-kiranti table-1">
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>USA</td>
+        <td>30</td>
+        <td>Engineer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Canada</td>
+        <td>28</td>
+        <td>Teacher</td>
+      </tr>
+      <tr>
+        <td>Mark Johnson</td>
+        <td>UK</td>
+        <td>35</td>
+        <td>Doctor</td>
+      </tr>
+      <tr>
+        <td>Lisa Brown</td>
+        <td>Australia</td>
+        <td>32</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+
+    <br><br><br>
+
+    <table class="sachin table-1">
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Age</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>USA</td>
+        <td>30</td>
+        <td>Engineer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Canada</td>
+        <td>28</td>
+        <td>Teacher</td>
+      </tr>
+      <tr>
+        <td>Mark Johnson</td>
+        <td>UK</td>
+        <td>35</td>
+        <td>Doctor</td>
+      </tr>
+      <tr>
+        <td>Lisa Brown</td>
+        <td>Australia</td>
+        <td>32</td>
+        <td>Designer</td>
+      </tr>
     </table>
 
     <!-- Load jQuery -->
@@ -70,7 +101,16 @@
 
     <script>
         $(function () {
-            $('table').easyTableA11y()
+            $('.table-1').easyTableA11y({
+              label: 'data-easy-table',
+              selector: '.table-1',
+              view: '786px',
+              css: {
+                trBottomBorder: '1px solid #000',
+                tdMarginRight: '10px !important',
+                tdFontWeight: 'bold'
+              }
+            })
         });
     </script>
 </body>

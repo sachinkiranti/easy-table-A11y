@@ -67,6 +67,23 @@ Link directly to EasyTable files on [unpkg](https://unpkg.com).
     </script>
 ```
 
+## Configurations
+
+```js
+$(function () {
+  $('.table-1').easyTableA11y({
+    label: 'data-easy-table',
+    selector: '.table-1',
+    view: '786px',
+    css: {
+      trBottomBorder: '1px solid #000',
+      tdMarginRight: '10px !important',
+      tdFontWeight: 'bold'
+    }
+  })
+});
+```
+
 ## Demo
 
 You can see the demo page created in dist/demo.html.

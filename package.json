@@ -16,7 +16,12 @@
         "bundle": "rollup -c",
         "minify": "uglifyjs build/easy-table.js --output dist/easy-table.min.js"
     },
-    "keywords": [],
+    "keywords": [
+        "jquery",
+        "jquery-plugin",
+        "html-table",
+        "table-responsive"
+    ],
     "author": "Sachin Kiranti <sachinkiranti@gmail.com> (https://raisachin.com.np/)",
     "license": "MIT",
     "bugs": {
