@@ -6,7 +6,7 @@ A Simple Responsive Table js library.
 
 ### Download
 
-- [easy-table.min.js](https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js)
+- [easy-table.min.js](https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.2/dist/easy-table.min.js)
 
 ### CDN
 
@@ -14,7 +14,7 @@ Link directly to EasyTable files on [unpkg](https://unpkg.com).
 
 
 ``` html
-<script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js"></script>
+<script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.2/dist/easy-table.min.js"></script>
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ Link directly to EasyTable files on [unpkg](https://unpkg.com).
     </table>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.0/dist/easy-table.min.js"></script>
+    <script src="https://unpkg.com/@sachinkiranti/easy-table-a11y@1.0.2/dist/easy-table.min.js"></script>
 
     <script>
         $(function () {
